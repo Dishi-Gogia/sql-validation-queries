@@ -1,0 +1,15 @@
+-- Verify duplicate customer IDs
+SELECT customer_id, COUNT(*)
+FROM Customers
+GROUP BY customer_id
+HAVING COUNT(*) > 1;
+
+-- Verify null values in mandatory field
+SELECT *
+FROM Orders
+WHERE order_date IS NULL;
+
+-- Validate total amount mismatch
+SELECT order_id, quantity, price, total_amount
+FROM Orders
+WHERE (quantity * price) <> total_amount;
