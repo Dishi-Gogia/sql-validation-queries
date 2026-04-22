@@ -67,6 +67,10 @@ UI validation alone is not sufficient—QA engineers must ensure that:
 ✔️ Support Salesforce and CPQ testing
 ✔️ Perform backend validation for order management systems
 ✔️ Assist in defect analysis and RCA
+✔️ Discount calculation validation  
+✔️ Pricing integrity checks  
+✔️ Quote-to-Order conversion validation  
+✔️ Revenue and transaction validation  
 
 ---
 
