@@ -1,0 +1,7 @@
+-- Validate quote to order conversion totals
+SELECT q.quote_id,
+       q.total_amount AS quote_total,
+       o.total_amount AS order_total
+FROM quotes q
+JOIN orders o ON q.quote_id = o.quote_id
+WHERE q.total_amount <> o.total_amount;
